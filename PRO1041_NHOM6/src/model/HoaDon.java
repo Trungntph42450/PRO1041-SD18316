@@ -4,38 +4,36 @@
  */
 package model;
 
-import java.sql.Date;
-
-
+import java.util.Date;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author Admin BVCN88 02
  */
 public class HoaDon {
     private String maHoaDon;
-    private String maNV;
-    private String maKH;
-    private String hTTT;
-    private java.sql.Date ngayTao;
-    private double thanhTien;
-    private boolean  tranThai;
+    private NhanVien nhanVien;
+    private KhachHang khachHang;
+    private HinhThucThanhToan hinhThucThanhToan;
+    private Date ngayTao;
+    private double tongTien;
+    private boolean trangThai;
     private String ghiChu;
-    private String maVoucher;
+    private Events voucher;
 
     public HoaDon() {
     }
 
-    public HoaDon(String maHoaDon, String maNV, String maKH, String hTTT, Date ngayTao, double thanhTien, boolean tranThai, String ghiChu, String maVoucher) {
+    public HoaDon(String maHoaDon, NhanVien nhanVien, KhachHang khachHang, HinhThucThanhToan hinhThucThanhToan, Date ngayTao, double tongTien, boolean trangThai, String ghiChu, Events voucher) {
         this.maHoaDon = maHoaDon;
-        this.maNV = maNV;
-        this.maKH = maKH;
-        this.hTTT = hTTT;
+        this.nhanVien = nhanVien;
+        this.khachHang = khachHang;
+        this.hinhThucThanhToan = hinhThucThanhToan;
         this.ngayTao = ngayTao;
-        this.thanhTien = thanhTien;
-        this.tranThai = tranThai;
+        this.tongTien = tongTien;
+        this.trangThai = trangThai;
         this.ghiChu = ghiChu;
-        this.maVoucher = maVoucher;
+        this.voucher = voucher;
     }
 
     public String getMaHoaDon() {
@@ -46,28 +44,28 @@ public class HoaDon {
         this.maHoaDon = maHoaDon;
     }
 
-    public String getMaNV() {
-        return maNV;
+    public NhanVien getNhanVien() {
+        return nhanVien;
     }
 
-    public void setMaNV(String maNV) {
-        this.maNV = maNV;
+    public void setNhanVien(NhanVien nhanVien) {
+        this.nhanVien = nhanVien;
     }
 
-    public String getMaKH() {
-        return maKH;
+    public KhachHang getKhachHang() {
+        return khachHang;
     }
 
-    public void setMaKH(String maKH) {
-        this.maKH = maKH;
+    public void setKhachHang(KhachHang khachHang) {
+        this.khachHang = khachHang;
     }
 
-    public String gethTTT() {
-        return hTTT;
+    public HinhThucThanhToan getHinhThucThanhToan() {
+        return hinhThucThanhToan;
     }
 
-    public void sethTTT(String hTTT) {
-        this.hTTT = hTTT;
+    public void setHinhThucThanhToan(HinhThucThanhToan hinhThucThanhToan) {
+        this.hinhThucThanhToan = hinhThucThanhToan;
     }
 
     public Date getNgayTao() {
@@ -78,20 +76,20 @@ public class HoaDon {
         this.ngayTao = ngayTao;
     }
 
-    public double getThanhTien() {
-        return thanhTien;
+    public double getTongTien() {
+        return tongTien;
     }
 
-    public void setThanhTien(double thanhTien) {
-        this.thanhTien = thanhTien;
+    public void setTongTien(double tongTien) {
+        this.tongTien = tongTien;
     }
 
-    public boolean isTranThai() {
-        return tranThai;
+    public boolean isTrangThai() {
+        return trangThai;
     }
 
-    public void setTranThai(boolean tranThai) {
-        this.tranThai = tranThai;
+    public void setTrangThai(boolean trangThai) {
+        this.trangThai = trangThai;
     }
 
     public String getGhiChu() {
@@ -102,18 +100,12 @@ public class HoaDon {
         this.ghiChu = ghiChu;
     }
 
-    public String getMaVoucher() {
-        return maVoucher;
+    public Events getVoucher() {
+        return voucher;
     }
 
-    public void setMaVoucher(String maVoucher) {
-        this.maVoucher = maVoucher;
+    public void setVoucher(Events voucher) {
+        this.voucher = voucher;
     }
-
-    @Override
-    public String toString() {
-        return "HoaDon{" + "maHoaDon=" + maHoaDon + ", maNV=" + maNV + ", maKH=" + maKH + ", hTTT=" + hTTT + ", ngayTao=" + ngayTao + ", thanhTien=" + thanhTien + ", tranThai=" + tranThai + ", ghiChu=" + ghiChu + ", maVoucher=" + maVoucher + '}';
-    }
-    
     
 }

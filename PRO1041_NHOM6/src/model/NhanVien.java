@@ -2,32 +2,38 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package model;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author Admin BVCN88 02
  */
 public class NhanVien {
+
     private String maNhanVien;
-    private String maTK;
+    private TaiKhoan taiKhoan;
     private String hoTen;
     private boolean gioiTinh;
     private String diaChi;
     private String soDienThoai;
     private String CCCD;
-    private java.sql.Date ngayVaoLam;
+    private Date ngayVaoLam;
     private boolean trangThai;
     private String anh;
+    private String maTaiKhoan;
 
     public NhanVien() {
     }
 
-    public NhanVien(String maNhanVien, String maTK, String hoTen, boolean gioiTinh, String diaChi, String soDienThoai, String CCCD, Date ngayVaoLam, boolean trangThai, String anh) {
+    public NhanVien(String maNhanVien, TaiKhoan taiKhoan, String hoTen, boolean gioiTinh, String diaChi, String soDienThoai, String CCCD, Date ngayVaoLam, boolean trangThai, String anh) {
         this.maNhanVien = maNhanVien;
-        this.maTK = maTK;
+        this.taiKhoan = taiKhoan;
         this.hoTen = hoTen;
         this.gioiTinh = gioiTinh;
         this.diaChi = diaChi;
@@ -38,6 +44,27 @@ public class NhanVien {
         this.anh = anh;
     }
 
+    public NhanVien(String maNhanVien, String maTaiKhoan, String hoTen, boolean gioiTinh, String diaChi, String soDienThoai, String CCCD, Date ngayVaoLam, boolean trangThai, String anh) {
+        this.maNhanVien = maNhanVien;
+        this.hoTen = hoTen;
+        this.gioiTinh = gioiTinh;
+        this.diaChi = diaChi;
+        this.soDienThoai = soDienThoai;
+        this.CCCD = CCCD;
+        this.ngayVaoLam = ngayVaoLam;
+        this.trangThai = trangThai;
+        this.anh = anh;
+        this.maTaiKhoan = maTaiKhoan;
+    }
+
+    public String getMaTaiKhoan() {
+        return maTaiKhoan;
+    }
+
+    public void setMaTaiKhoan(String maTaiKhoan) {
+        this.maTaiKhoan = maTaiKhoan;
+    }
+
     public String getMaNhanVien() {
         return maNhanVien;
     }
@@ -46,12 +73,12 @@ public class NhanVien {
         this.maNhanVien = maNhanVien;
     }
 
-    public String getMaTK() {
-        return maTK;
+    public TaiKhoan getTaiKhoan() {
+        return taiKhoan;
     }
 
-    public void setMaTK(String maTK) {
-        this.maTK = maTK;
+    public void setTaiKhoan(TaiKhoan taiKhoan) {
+        this.taiKhoan = taiKhoan;
     }
 
     public String getHoTen() {
@@ -120,7 +147,8 @@ public class NhanVien {
 
     @Override
     public String toString() {
-        return "NhanVien{" + "maNhanVien=" + maNhanVien + ", maTK=" + maTK + ", hoTen=" + hoTen + ", gioiTinh=" + gioiTinh + ", diaChi=" + diaChi + ", soDienThoai=" + soDienThoai + ", CCCD=" + CCCD + ", ngayVaoLam=" + ngayVaoLam + ", trangThai=" + trangThai + ", anh=" + anh + '}';
+        return diaChi;
     }
-    
+
 }
+
