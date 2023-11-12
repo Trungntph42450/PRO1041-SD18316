@@ -74,7 +74,7 @@ public class DangNhapView extends javax.swing.JFrame {
 
         PanelMain.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel3.setBackground(new java.awt.Color(51, 204, 255));
+        jPanel3.setBackground(new java.awt.Color(102, 255, 102));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -99,7 +99,7 @@ public class DangNhapView extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/locked.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/password.png"))); // NOI18N
 
         btnThoat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/close.png"))); // NOI18N
         btnThoat.setText("Thoát");
@@ -126,7 +126,6 @@ public class DangNhapView extends javax.swing.JFrame {
         });
 
         txtMatKhau.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
-        txtMatKhau.setPreferredSize(new java.awt.Dimension(64, 17));
 
         javax.swing.GroupLayout PanelMainLayout = new javax.swing.GroupLayout(PanelMain);
         PanelMain.setLayout(PanelMainLayout);
@@ -140,7 +139,7 @@ public class DangNhapView extends javax.swing.JFrame {
                             .addGroup(PanelMainLayout.createSequentialGroup()
                                 .addGap(48, 48, 48)
                                 .addComponent(btnDangNhap)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                                 .addComponent(btnThoat))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelMainLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -150,8 +149,8 @@ public class DangNhapView extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(PanelMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtTaiKhoan, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)
-                                    .addComponent(txtMatKhau, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addContainerGap(29, Short.MAX_VALUE))
+                                    .addComponent(txtMatKhau))))
+                        .addContainerGap(35, Short.MAX_VALUE))
                     .addGroup(PanelMainLayout.createSequentialGroup()
                         .addGap(83, 83, 83)
                         .addComponent(jLabel1)

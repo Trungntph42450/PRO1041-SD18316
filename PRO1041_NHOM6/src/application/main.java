@@ -5,7 +5,6 @@
 package application;
 
 import view.KrantsStoreView;
-import service.KrantsStore;
 
 /**
  *
