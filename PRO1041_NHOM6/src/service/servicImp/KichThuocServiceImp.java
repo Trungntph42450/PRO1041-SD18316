@@ -7,13 +7,13 @@ package service.servicImp;
 import java.util.List;
 import model.KichThuoc;
 import repository.KichThuocRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin BVCN88 02
  */
-public class KichThuocServiceImp implements AdamStore<KichThuoc, String>{
+public class KichThuocServiceImp implements KrantsStore<KichThuoc, String>{
     KichThuocRepository repo=new KichThuocRepository();
 
     @Override

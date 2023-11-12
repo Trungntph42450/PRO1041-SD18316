@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author Admin BVCN88 02
  */
-public interface AdamStore<K,E> {
+public interface KrantsStore<K,E> {
     public List<K> getAll();
     public int them(K k);
     public int sua(K k,E e);

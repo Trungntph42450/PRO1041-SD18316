@@ -7,13 +7,13 @@ package service.servicImp;
 import java.util.List;
 import model.ChatLieu;
 import repository.ChatLieuRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin BVCN88 02
  */
-public class ChatLieuServiceImp implements AdamStore<ChatLieu, String>{
+public class ChatLieuServiceImp implements KrantsStore<ChatLieu, String>{
     ChatLieuRepository repo=new ChatLieuRepository();
 
     @Override

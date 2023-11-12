@@ -6,14 +6,14 @@ package service.servicImp;
 import java.util.List;
 import model.ChiTietSanPham;
 import repository.ChiTietSanPhamRepository;
-import service.AdamStore;
-import view.AdamStoreView;
+import view.KrantsStoreView;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin BVCN88 02
  */
-public class ChiTietSanPhamServiceImp implements AdamStore<ChiTietSanPham, String>{
+public class ChiTietSanPhamServiceImp implements KrantsStore<ChiTietSanPham, String>{
     ChiTietSanPhamRepository repo=new ChiTietSanPhamRepository();
 
     @Override

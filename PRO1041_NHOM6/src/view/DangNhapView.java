@@ -214,7 +214,7 @@ public class DangNhapView extends javax.swing.JFrame {
             String passWord = String.valueOf(txtMatKhau.getText());
             if (service.isExistedUser(userName, passWord)) {
                 this.setVisible(false);
-                new AdamStoreView().setVisible(true);
+                new KrantsStoreView().setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(this, "UserName hoac Password sai !");
             }

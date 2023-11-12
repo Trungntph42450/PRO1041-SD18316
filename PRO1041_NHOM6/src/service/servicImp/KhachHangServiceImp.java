@@ -7,13 +7,13 @@ package service.servicImp;
 import java.util.List;
 import model.KhachHang;
 import repository.KhachHangRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin
  */
-public class KhachHangServiceImp implements AdamStore<KhachHang, String>{
+public class KhachHangServiceImp implements KrantsStore<KhachHang, String>{
     
     KhachHangRepository repo = new KhachHangRepository();
     

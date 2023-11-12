@@ -7,13 +7,13 @@ package service.servicImp;
 import java.util.List;
 import model.Voucher;
 import repository.VoucherRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin
  */
-public class VoucherServiceImp implements AdamStore<Voucher, String> {
+public class VoucherServiceImp implements KrantsStore<Voucher, String> {
 
     VoucherRepository repo = new VoucherRepository();
 

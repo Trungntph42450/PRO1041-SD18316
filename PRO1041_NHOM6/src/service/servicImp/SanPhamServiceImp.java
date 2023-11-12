@@ -7,13 +7,13 @@ package service.servicImp;
 import java.util.List;
 import model.SanPham;
 import repository.SanPhamRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin BVCN88 02
  */
-public class SanPhamServiceImp implements AdamStore<SanPham, String> {
+public class SanPhamServiceImp implements KrantsStore<SanPham, String> {
 
     SanPhamRepository repo = new SanPhamRepository();
 

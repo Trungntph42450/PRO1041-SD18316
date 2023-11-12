@@ -7,13 +7,13 @@ package service.servicImp;
 import java.util.List;
 import model.Events;
 import repository.KhuyenMaiRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin
  */
-public class KhuyenMaiServiceImp implements AdamStore<Events, String> {
+public class KhuyenMaiServiceImp implements KrantsStore<Events, String> {
 
     KhuyenMaiRepository repo = new KhuyenMaiRepository();
 

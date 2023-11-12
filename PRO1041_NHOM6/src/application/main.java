@@ -4,8 +4,8 @@
  */
 package application;
 
-import service.AdamStore;
-import view.AdamStoreView;
+import view.KrantsStoreView;
+import service.KrantsStore;
 
 /**
  *
@@ -13,7 +13,7 @@ import view.AdamStoreView;
  */
 public class main {
     public static void main(String[] args) {
-        AdamStoreView adv = new AdamStoreView();
-        adv.setVisible(true);
+        KrantsStoreView ksv = new KrantsStoreView();
+        ksv.setVisible(true);
     }
 }

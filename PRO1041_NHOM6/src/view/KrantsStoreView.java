@@ -14,7 +14,7 @@ import javax.swing.border.Border;
  *
  * @author Admin
  */
-public class AdamStoreView extends javax.swing.JFrame {
+public class KrantsStoreView extends javax.swing.JFrame {
 
     Color defaultColor = new Color(51, 204, 255);
     Color selectedColor = new Color(204, 204, 204);
@@ -23,7 +23,7 @@ public class AdamStoreView extends javax.swing.JFrame {
     /**
      * Creates new form AdamStoreView
      */
-    public AdamStoreView() {
+    public KrantsStoreView() {
         initComponents();
         this.dispose();
         setUndecorated(true);
@@ -109,7 +109,7 @@ public class AdamStoreView extends javax.swing.JFrame {
                 .addGroup(pnlTitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlTitleLayout.createSequentialGroup()
                         .addComponent(btnExit)
-                        .addGap(0, 23, Short.MAX_VALUE))
+                        .addGap(0, 22, Short.MAX_VALUE))
                     .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
@@ -743,20 +743,21 @@ public class AdamStoreView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdamStoreView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KrantsStoreView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdamStoreView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KrantsStoreView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdamStoreView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KrantsStoreView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdamStoreView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KrantsStoreView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AdamStoreView().setVisible(true);
+                new KrantsStoreView().setVisible(true);
             }
         });
     }

@@ -8,13 +8,13 @@ import java.util.List;
 import model.NhanVien;
 
 import repository.NhanVienRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin
  */
-public class NhanVienServiceImp implements AdamStore<NhanVien, String>{
+public class NhanVienServiceImp implements KrantsStore<NhanVien, String>{
     NhanVienRepository repo = new NhanVienRepository();
 
     @Override

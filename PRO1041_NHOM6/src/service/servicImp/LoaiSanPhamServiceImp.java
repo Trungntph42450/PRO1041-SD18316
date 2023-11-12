@@ -7,13 +7,13 @@ package service.servicImp;
 import java.util.List;
 import model.LoaiSanPham;
 import repository.LoaiSanPhamRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin BVCN88 02
  */
-public class LoaiSanPhamServiceImp implements AdamStore<LoaiSanPham, String>{
+public class LoaiSanPhamServiceImp implements KrantsStore<LoaiSanPham, String>{
     LoaiSanPhamRepository repo=new LoaiSanPhamRepository();
 
     @Override

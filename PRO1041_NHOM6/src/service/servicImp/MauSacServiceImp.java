@@ -7,13 +7,13 @@ package service.servicImp;
 import java.util.List;
 import model.MauSac;
 import repository.MauSacRepository;
-import service.AdamStore;
+import service.KrantsStore;
 
 /**
  *
  * @author Admin BVCN88 02
  */
-public class MauSacServiceImp implements AdamStore<MauSac, String> {
+public class MauSacServiceImp implements KrantsStore<MauSac, String> {
 
     MauSacRepository repo = new MauSacRepository();
 
