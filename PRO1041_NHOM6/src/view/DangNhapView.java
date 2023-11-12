@@ -72,9 +72,11 @@ public class DangNhapView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        PanelMain.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMain.setBackground(new java.awt.Color(255, 204, 204));
+        PanelMain.setForeground(new java.awt.Color(102, 51, 255));
 
-        jPanel3.setBackground(new java.awt.Color(102, 255, 102));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setForeground(new java.awt.Color(153, 102, 255));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
