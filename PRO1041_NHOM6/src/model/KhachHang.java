@@ -4,42 +4,40 @@
  */
 package model;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author Admin BVCN88 02
  */
 public class KhachHang {
-    private String maKH;
+    private String maKhachHang;
     private String hoTen;
-    private java.sql.Date ngaySinh;
-    private String sdt;
+    private Date ngaySinh;
+    private String soDienThoai;
     private String email;
     private boolean gioiTinh;
-    private String DiaChi;
-    private boolean trangThai;
+    private String diaChi;
 
     public KhachHang() {
     }
 
-    public KhachHang(String maKH, String hoTen, Date ngaySinh, String sdt, String email, boolean gioiTinh, String DiaChi, boolean trangThai) {
-        this.maKH = maKH;
+    public KhachHang(String maKhachHang, String hoTen, Date ngaySinh, String soDienThoai, String email, boolean gioiTinh, String diaChi) {
+        this.maKhachHang = maKhachHang;
         this.hoTen = hoTen;
         this.ngaySinh = ngaySinh;
-        this.sdt = sdt;
+        this.soDienThoai = soDienThoai;
         this.email = email;
         this.gioiTinh = gioiTinh;
-        this.DiaChi = DiaChi;
-        this.trangThai = trangThai;
+        this.diaChi = diaChi;
     }
 
-    public String getMaKH() {
-        return maKH;
+    public String getMaKhachHang() {
+        return maKhachHang;
     }
 
-    public void setMaKH(String maKH) {
-        this.maKH = maKH;
+    public void setMaKhachHang(String maKhachHang) {
+        this.maKhachHang = maKhachHang;
     }
 
     public String getHoTen() {
@@ -58,12 +56,12 @@ public class KhachHang {
         this.ngaySinh = ngaySinh;
     }
 
-    public String getSdt() {
-        return sdt;
+    public String getSoDienThoai() {
+        return soDienThoai;
     }
 
-    public void setSdt(String sdt) {
-        this.sdt = sdt;
+    public void setSoDienThoai(String soDienThoai) {
+        this.soDienThoai = soDienThoai;
     }
 
     public String getEmail() {
@@ -83,24 +81,23 @@ public class KhachHang {
     }
 
     public String getDiaChi() {
-        return DiaChi;
+        return diaChi;
     }
 
-    public void setDiaChi(String DiaChi) {
-        this.DiaChi = DiaChi;
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
     }
-
-    public boolean isTrangThai() {
-        return trangThai;
-    }
-
-    public void setTrangThai(boolean trangThai) {
-        this.trangThai = trangThai;
+    
+    public String chiTietGioiTinh(){
+        if (gioiTinh) {
+            return "Nam";
+        } else {
+            return "Nữ";
+        }
     }
 
     @Override
     public String toString() {
-        return "KhachHang{" + "maKH=" + maKH + ", hoTen=" + hoTen + ", ngaySinh=" + ngaySinh + ", sdt=" + sdt + ", email=" + email + ", gioiTinh=" + gioiTinh + ", DiaChi=" + DiaChi + ", trangThai=" + trangThai + '}';
+        return diaChi;
     }
-    
 }

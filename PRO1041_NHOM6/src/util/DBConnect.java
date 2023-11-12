@@ -7,41 +7,55 @@ package util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
- * @author tunzo
+ * @author Windows 10 Pro
  */
 public class DBConnect {
 
-    public static final String HOSTNAME = "localhost";
-    public static final String PORT = "1433";
-    public static final String DBNAME = "KrantsStore";
-    public static final String USERNAME = "sa";
-    public static final String PASSWORD = "tunzo";
+    private static final String USERNAME = "sa";
+    private static final String PASSWORD = "tunzo";
+    private static final String SERVER = "localhost";
+    private static final String PORT = "1433";
+    private static final String DATABASE_NAME = "KrantsStore";
+    private static final boolean USING_SSL = false;
 
-    /**
-     * Get connection to MSSQL Server
-     *
-     * @return Connection
-     */
-    public static Connection getConnection() {
+    private static String CONNECT_STRING;
 
-// Create a variable for the connection string.
-        String connectionUrl = "jdbc:sqlserver://" + HOSTNAME + ":" + PORT + ";"
-                + "databaseName=" + DBNAME + ";encrypt=true;trustservercertificate=true";
-
+    static {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            return DriverManager.getConnection(connectionUrl, USERNAME, PASSWORD);
-        } // Handle any errors that may have occurred.
-        catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace(System.out);
+
+            StringBuilder connectStringBuilder = new StringBuilder();
+            connectStringBuilder.append("jdbc:sqlserver://")
+                    .append(SERVER).append(":").append(PORT).append(";")
+                    .append("databaseName=").append(DATABASE_NAME).append(";")
+                    .append("user=").append(USERNAME).append(";")
+                    .append("password=").append(PASSWORD).append(";");
+            if (USING_SSL) {
+                connectStringBuilder.append("encrypt=true;trustServerCertificate=true;");
+            }
+            CONNECT_STRING = connectStringBuilder.toString();
+            System.out.println("Connect String có dạng: " + CONNECT_STRING);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(DBConnect.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return null;
     }
 
-    public static void main(String[] args) {
-        System.out.println(getConnection());
+    public static Connection getConnection() {
+        try {
+            return DriverManager.getConnection(CONNECT_STRING);
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            Logger.getLogger(DBConnect.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        Connection conn = getConnection();
     }
 }

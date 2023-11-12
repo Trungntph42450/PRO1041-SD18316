@@ -6,48 +6,48 @@ package model;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author Admin BVCN88 02
  */
 public class TaiKhoan {
-    private String maTk;
-    private String userName;
-    private String passWord;
+    private String maTaiKhoan;
+    private String UserName;
+    private String PassWord;
     private String role;
-    private boolean trangThai;
+    private int trangThai;
 
     public TaiKhoan() {
     }
 
-    public TaiKhoan(String maTk, String userName, String passWord, String role, boolean trangThai) {
-        this.maTk = maTk;
-        this.userName = userName;
-        this.passWord = passWord;
+    public TaiKhoan(String maTaiKhoan, String UserName, String PassWord, String role, int trangThai) {
+        this.maTaiKhoan = maTaiKhoan;
+        this.UserName = UserName;
+        this.PassWord = PassWord;
         this.role = role;
         this.trangThai = trangThai;
     }
 
-    public String getMaTk() {
-        return maTk;
+    public String getMaTaiKhoan() {
+        return maTaiKhoan;
     }
 
-    public void setMaTk(String maTk) {
-        this.maTk = maTk;
+    public void setMaTaiKhoan(String maTaiKhoan) {
+        this.maTaiKhoan = maTaiKhoan;
     }
 
     public String getUserName() {
-        return userName;
+        return UserName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUserName(String UserName) {
+        this.UserName = UserName;
     }
 
     public String getPassWord() {
-        return passWord;
+        return PassWord;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public void setPassWord(String PassWord) {
+        this.PassWord = PassWord;
     }
 
     public String getRole() {
@@ -58,17 +58,12 @@ public class TaiKhoan {
         this.role = role;
     }
 
-    public boolean isTrangThai() {
+    public int getTrangThai() {
         return trangThai;
     }
 
-    public void setTrangThai(boolean trangThai) {
+    public void setTrangThai(int trangThai) {
         this.trangThai = trangThai;
-    }
-
-    @Override
-    public String toString() {
-        return "TaiKhoan{" + "maTk=" + maTk + ", userName=" + userName + ", passWord=" + passWord + ", role=" + role + ", trangThai=" + trangThai + '}';
     }
     
 }

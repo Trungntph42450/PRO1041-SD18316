@@ -6,34 +6,34 @@ package model;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author Admin BVCN88 02
  */
 public class SanPham {
+
     private String maSanPham;
     private String tenSanPham;
     private boolean trangThai;
-    private Integer soLuong;
-    private double gia;
-    private String moTa;
-    private String maSac;
-    private String chatLieu;
-    private String kichThuoc;
-    private String maLSP;
+    private LoaiSanPham loaiSanPham;
+    private String xuatXu;
 
     public SanPham() {
     }
 
-    public SanPham(String maSanPham, String tenSanPham, boolean trangThai, Integer soLuong, double gia, String moTa, String maSac, String chatLieu, String kichThuoc, String maLSP) {
+    public SanPham(String maSanPham) {
+        this.maSanPham = maSanPham;
+    }
+
+    public SanPham(String maSanPham, String tenSanPham) {
+        this.maSanPham = maSanPham;
+        this.tenSanPham = tenSanPham;
+    }
+
+    public SanPham(String maSanPham, String tenSanPham, boolean trangThai, LoaiSanPham loaiSanPham, String xuatXu) {
         this.maSanPham = maSanPham;
         this.tenSanPham = tenSanPham;
         this.trangThai = trangThai;
-        this.soLuong = soLuong;
-        this.gia = gia;
-        this.moTa = moTa;
-        this.maSac = maSac;
-        this.chatLieu = chatLieu;
-        this.kichThuoc = kichThuoc;
-        this.maLSP = maLSP;
+        this.loaiSanPham = loaiSanPham;
+        this.xuatXu = xuatXu;
     }
 
     public String getMaSanPham() {
@@ -60,65 +60,29 @@ public class SanPham {
         this.trangThai = trangThai;
     }
 
-    public Integer getSoLuong() {
-        return soLuong;
+    public LoaiSanPham getLoaiSanPham() {
+        return loaiSanPham;
     }
 
-    public void setSoLuong(Integer soLuong) {
-        this.soLuong = soLuong;
+    public void setLoaiSanPham(LoaiSanPham loaiSanPham) {
+        this.loaiSanPham = loaiSanPham;
     }
 
-    public double getGia() {
-        return gia;
+    public String getXuatXu() {
+        return xuatXu;
     }
 
-    public void setGia(double gia) {
-        this.gia = gia;
-    }
-
-    public String getMoTa() {
-        return moTa;
-    }
-
-    public void setMoTa(String moTa) {
-        this.moTa = moTa;
-    }
-
-    public String getMaSac() {
-        return maSac;
-    }
-
-    public void setMaSac(String maSac) {
-        this.maSac = maSac;
-    }
-
-    public String getChatLieu() {
-        return chatLieu;
-    }
-
-    public void setChatLieu(String chatLieu) {
-        this.chatLieu = chatLieu;
-    }
-
-    public String getKichThuoc() {
-        return kichThuoc;
-    }
-
-    public void setKichThuoc(String kichThuoc) {
-        this.kichThuoc = kichThuoc;
-    }
-
-    public String getMaLSP() {
-        return maLSP;
-    }
-
-    public void setMaLSP(String maLSP) {
-        this.maLSP = maLSP;
+    public void setXuatXu(String xuatXu) {
+        this.xuatXu = xuatXu;
     }
 
     @Override
     public String toString() {
-        return "SanPham{" + "maSanPham=" + maSanPham + ", tenSanPham=" + tenSanPham + ", trangThai=" + trangThai + ", soLuong=" + soLuong + ", gia=" + gia + ", moTa=" + moTa + ", maSac=" + maSac + ", chatLieu=" + chatLieu + ", kichThuoc=" + kichThuoc + ", maLSP=" + maLSP + '}';
+        return maSanPham;
     }
+
+   
+
     
+
 }

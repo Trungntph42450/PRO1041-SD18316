@@ -1,0 +1,57 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package service.servicImp;
+
+import java.util.List;
+import model.MauSac;
+import repository.MauSacRepository;
+import service.KrantsStore;
+
+/**
+ *
+ * @author Admin BVCN88 02
+ */
+public class MauSacServiceImp implements KrantsStore<MauSac, String> {
+
+    MauSacRepository repo = new MauSacRepository();
+
+    @Override
+    public List<MauSac> getAll() {
+        return repo.getAll();
+    }
+
+    @Override
+    public int them(MauSac k) {
+        return repo.them(k);
+    }
+
+    @Override
+    public int sua(MauSac k, String e) {
+        return repo.sua(k, e);
+    }
+
+    @Override
+    public int xoa(String e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public MauSac getOne(String e) {
+        return repo.getOne(e);
+    }
+
+    @Override
+    public List<MauSac> getList(String e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public List<MauSac> listPageMS(int index) {
+        return repo.listPageMS(index);
+    }
+
+    public int tongBanGhi() {
+        return repo.tongBanGhi();
+    }
+}

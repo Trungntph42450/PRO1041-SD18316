@@ -6,18 +6,21 @@ package model;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author Admin
  */
 public class Voucher {
+
     private String maVoucher;
-    private Integer soLuong;
+    private String maEventa;
+    private int soLuong;
     private boolean trangThai;
 
     public Voucher() {
     }
 
-    public Voucher(String maVoucher, Integer soLuong, boolean trangThai) {
+    public Voucher(String maVoucher, String maEventa, int soLuong, boolean trangThai) {
         this.maVoucher = maVoucher;
+        this.maEventa = maEventa;
         this.soLuong = soLuong;
         this.trangThai = trangThai;
     }
@@ -30,11 +33,19 @@ public class Voucher {
         this.maVoucher = maVoucher;
     }
 
-    public Integer getSoLuong() {
+    public String getMaEventa() {
+        return maEventa;
+    }
+
+    public void setMaEventa(String maEventa) {
+        this.maEventa = maEventa;
+    }
+
+    public int getSoLuong() {
         return soLuong;
     }
 
-    public void setSoLuong(Integer soLuong) {
+    public void setSoLuong(int soLuong) {
         this.soLuong = soLuong;
     }
 
@@ -45,10 +56,8 @@ public class Voucher {
     public void setTrangThai(boolean trangThai) {
         this.trangThai = trangThai;
     }
-
-    @Override
-    public String toString() {
-        return "Voucher{" + "maVoucher=" + maVoucher + ", soLuong=" + soLuong + ", trangThai=" + trangThai + '}';
-    }
     
+
+   
+
 }

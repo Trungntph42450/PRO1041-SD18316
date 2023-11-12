@@ -6,38 +6,43 @@ package model;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author Admin BVCN88 02
  */
 public class LoaiSanPham {
-    private String maLSP;
-    private String tenSP;
+    private String maLoaiSanPham;
+    private String tenLoaiSanPham;
     private boolean trangThai;
     private String moTa;
 
     public LoaiSanPham() {
     }
 
-    public LoaiSanPham(String maLSP, String tenSP, boolean trangThai, String moTa) {
-        this.maLSP = maLSP;
-        this.tenSP = tenSP;
+    public LoaiSanPham(String maLoaiSanPham, String tenLoaiSanPham) {
+        this.maLoaiSanPham = maLoaiSanPham;
+        this.tenLoaiSanPham = tenLoaiSanPham;
+    }
+
+    public LoaiSanPham(String maLoaiSanPham, String tenLoaiSanPham, boolean trangThai, String moTa) {
+        this.maLoaiSanPham = maLoaiSanPham;
+        this.tenLoaiSanPham = tenLoaiSanPham;
         this.trangThai = trangThai;
         this.moTa = moTa;
     }
 
-    public String getMaLSP() {
-        return maLSP;
+    public String getMaLoaiSanPham() {
+        return maLoaiSanPham;
     }
 
-    public void setMaLSP(String maLSP) {
-        this.maLSP = maLSP;
+    public void setMaLoaiSanPham(String maLoaiSanPham) {
+        this.maLoaiSanPham = maLoaiSanPham;
     }
 
-    public String getTenSP() {
-        return tenSP;
+    public String getTenLoaiSanPham() {
+        return tenLoaiSanPham;
     }
 
-    public void setTenSP(String tenSP) {
-        this.tenSP = tenSP;
+    public void setTenLoaiSanPham(String tenLoaiSanPham) {
+        this.tenLoaiSanPham = tenLoaiSanPham;
     }
 
     public boolean isTrangThai() {
@@ -58,7 +63,7 @@ public class LoaiSanPham {
 
     @Override
     public String toString() {
-        return "LoaiSanPham{" + "maLSP=" + maLSP + ", tenSP=" + tenSP + ", trangThai=" + trangThai + ", moTa=" + moTa + '}';
+        return tenLoaiSanPham;
     }
     
 }
