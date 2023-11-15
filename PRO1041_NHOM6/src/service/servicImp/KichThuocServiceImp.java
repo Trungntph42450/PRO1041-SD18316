@@ -11,7 +11,7 @@ import service.KrantsStore;
 
 /**
  *
- * @author Admin BVCN88 02
+ * @author Nguyen Thanh Trung
  */
 public class KichThuocServiceImp implements KrantsStore<KichThuoc, String>{
     KichThuocRepository repo=new KichThuocRepository();

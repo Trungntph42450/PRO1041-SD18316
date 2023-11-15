@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  *
- * @author Admin BVCN88 02
+ * @author Nguyen Thanh Trung
  */
 public interface KrantsStore<K,E> {
     public List<K> getAll();
