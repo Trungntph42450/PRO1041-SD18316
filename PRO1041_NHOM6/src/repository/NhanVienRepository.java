@@ -15,7 +15,7 @@ import util.DBConnect;
 
 /**
  *
- * @author Admin
+ * @author Nguyen Thanh Trung
  */
 public class NhanVienRepository {
 

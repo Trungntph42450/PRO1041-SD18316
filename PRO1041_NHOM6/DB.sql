@@ -71,6 +71,8 @@ CREATE TABLE [HoaDon] (
   [TongTienSauKM] Money,
   [TrangThai] bit,
   [GhiChu] nvarchar(100),
+  [MaEV] varchar(10),
+  CONSTRAINT FK_HD_EV foreign key(MaEV) references Events(MaEV),
   PRIMARY KEY ([MaHoaDon])
 );
 
