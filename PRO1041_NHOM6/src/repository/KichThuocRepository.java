@@ -12,7 +12,7 @@ import util.DBConnect;
 
 /**
  *
- * @author Admin BVCN88 02
+ * @author Nguyen Thanh Trung
  */
 public class KichThuocRepository {
 

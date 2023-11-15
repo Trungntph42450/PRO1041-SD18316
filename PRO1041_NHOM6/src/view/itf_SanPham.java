@@ -34,7 +34,7 @@ import service.servicImp.SanPhamServiceImp;
 
 /**
  *
- * @author Admin BVCN88 02
+ * @author Nguyen Thanh Trung
  */
 public class itf_SanPham extends javax.swing.JInternalFrame {
 

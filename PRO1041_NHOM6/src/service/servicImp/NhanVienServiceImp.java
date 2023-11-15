@@ -12,7 +12,7 @@ import service.KrantsStore;
 
 /**
  *
- * @author Admin
+ * @author Nguyen Thanh Trung
  */
 public class NhanVienServiceImp implements KrantsStore<NhanVien, String>{
     NhanVienRepository repo = new NhanVienRepository();

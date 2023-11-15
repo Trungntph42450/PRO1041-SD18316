@@ -11,7 +11,7 @@ import service.KrantsStore;
 
 /**
  *
- * @author Admin BVCN88 02
+ * @author Nguyen Thanh Trung
  */
 public class ChatLieuServiceImp implements KrantsStore<ChatLieu, String>{
     ChatLieuRepository repo=new ChatLieuRepository();

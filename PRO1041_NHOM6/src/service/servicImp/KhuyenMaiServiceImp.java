@@ -11,7 +11,7 @@ import service.KrantsStore;
 
 /**
  *
- * @author Admin
+ * @author Nguyen Thanh Trung
  */
 public class KhuyenMaiServiceImp implements KrantsStore<Events, String> {
 

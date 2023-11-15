@@ -6,7 +6,7 @@ package service.servicImp;
 
 /**
  *
- * @author Admin BVCN88 02
+ * @author Nguyen Thanh Trung
  */
 public class TestImp {
     
