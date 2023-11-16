@@ -85,7 +85,7 @@
         <Container class="javax.swing.JPanel" name="pnlTitle">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="cc" red="33" type="rgb"/>
+              <Color blue="66" green="ff" red="66" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[1000, 100]"/>
@@ -135,9 +135,6 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="KRANTS STORE"/>
               </Properties>
             </Component>
@@ -174,8 +171,9 @@
             <Container class="javax.swing.JPanel" name="pnlMenu">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="cc" red="33" type="rgb"/>
+                  <Color blue="33" green="ff" red="66" type="rgb"/>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
 
               <Layout>
@@ -221,7 +219,7 @@
                 <Container class="javax.swing.JPanel" name="pnlSanPham">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -259,11 +257,8 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/package.png"/>
+                          <Image iconType="3" name="/icon/brand-identity.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="S&#x1ea3;n ph&#x1ea9;m"/>
                       </Properties>
@@ -273,7 +268,7 @@
                 <Container class="javax.swing.JPanel" name="pnlNhanVien">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -311,11 +306,8 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/multiple-users-silhouette.png"/>
+                          <Image iconType="3" name="/icon/team.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Nh&#xe2;n vi&#xea;n"/>
                       </Properties>
@@ -325,7 +317,7 @@
                 <Container class="javax.swing.JPanel" name="pnlThongKe">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -364,7 +356,7 @@
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/document.png"/>
+                          <Image iconType="3" name="/icon/contract.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Th&#x1ed1;ng k&#xea;"/>
                       </Properties>
@@ -374,7 +366,7 @@
                 <Container class="javax.swing.JPanel" name="pnlHoaDon">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -412,11 +404,8 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/bill.png"/>
+                          <Image iconType="3" name="/icon/sticky-notes.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="H&#xf3;a &#x111;&#x1a1;n"/>
                       </Properties>
@@ -426,7 +415,7 @@
                 <Container class="javax.swing.JPanel" name="pnlLichSu">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -464,11 +453,8 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/hourglass.png"/>
+                          <Image iconType="3" name="/icon/history.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="L&#x1ecb;ch s&#x1eed;"/>
                       </Properties>
@@ -478,7 +464,7 @@
                 <Container class="javax.swing.JPanel" name="pnlKhuyenMai">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -516,11 +502,8 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/discount.png"/>
+                          <Image iconType="3" name="/icon/promotion.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Khuy&#x1ebf;n m&#x1ea1;i"/>
                       </Properties>
@@ -530,7 +513,7 @@
                 <Container class="javax.swing.JPanel" name="pnlKhachHang">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -573,11 +556,8 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/user (1).png"/>
+                          <Image iconType="3" name="/icon/customer-service.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Kh&#xe1;ch h&#xe0;ng"/>
                       </Properties>
@@ -587,7 +567,7 @@
                 <Container class="javax.swing.JPanel" name="pnlDoiMatKhau">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -631,11 +611,8 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/reset-password.png"/>
+                          <Image iconType="3" name="/icon/password.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="&#x110;&#x1ed5;i m&#x1ead;t kh&#x1ea9;u"/>
                       </Properties>
@@ -645,7 +622,7 @@
                 <Container class="javax.swing.JPanel" name="pnlDangXuat">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="33" type="rgb"/>
+                      <Color blue="33" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -689,11 +666,8 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI" size="14" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/icon/power-off.png"/>
+                          <Image iconType="3" name="/icon/emergency-exit.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="&#x110;&#x103;ng xu&#x1ea5;t"/>
                       </Properties>
