@@ -16,8 +16,8 @@ import javax.swing.border.Border;
  */
 public class KrantsStoreView extends javax.swing.JFrame {
 
-    Color defaultColor = new Color(51, 204, 255);
-    Color selectedColor = new Color(204, 204, 204);
+    Color defaultColor = new Color(102,255,102);
+    Color selectedColor = new Color(153,153,153);
     Color enterColor = new Color(228, 227, 227);
 
     /**
@@ -131,7 +131,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel2.setBackground(new java.awt.Color(51, 204, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/package.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/brand-identity.png"))); // NOI18N
         jLabel2.setText("Sản phẩm");
 
         javax.swing.GroupLayout pnlSanPhamLayout = new javax.swing.GroupLayout(pnlSanPham);
@@ -167,8 +167,9 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel3.setBackground(new java.awt.Color(51, 204, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/multiple-users-silhouette.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/team.png"))); // NOI18N
         jLabel3.setText("Nhân viên");
+        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout pnlNhanVienLayout = new javax.swing.GroupLayout(pnlNhanVien);
         pnlNhanVien.setLayout(pnlNhanVienLayout);
@@ -203,7 +204,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel12.setBackground(new java.awt.Color(51, 204, 255));
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/document.png"))); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/contract.png"))); // NOI18N
         jLabel12.setText("Thống kê");
 
         javax.swing.GroupLayout pnlThongKeLayout = new javax.swing.GroupLayout(pnlThongKe);
@@ -239,7 +240,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(51, 204, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/bill.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/sticky-notes.png"))); // NOI18N
         jLabel4.setText("Hóa đơn");
 
         javax.swing.GroupLayout pnlHoaDonLayout = new javax.swing.GroupLayout(pnlHoaDon);
@@ -275,7 +276,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel5.setBackground(new java.awt.Color(51, 204, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/hourglass.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/history.png"))); // NOI18N
         jLabel5.setText("Lịch sử");
 
         javax.swing.GroupLayout pnlLichSuLayout = new javax.swing.GroupLayout(pnlLichSu);
@@ -311,7 +312,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel6.setBackground(new java.awt.Color(51, 204, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/discount.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/promotion.png"))); // NOI18N
         jLabel6.setText("Khuyến mại");
 
         javax.swing.GroupLayout pnlKhuyenMaiLayout = new javax.swing.GroupLayout(pnlKhuyenMai);
@@ -347,7 +348,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel8.setBackground(new java.awt.Color(51, 204, 255));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/user (1).png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/customer-service.png"))); // NOI18N
         jLabel8.setText("Khách hàng");
 
         javax.swing.GroupLayout pnlKhachHangLayout = new javax.swing.GroupLayout(pnlKhachHang);
@@ -386,7 +387,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel7.setBackground(new java.awt.Color(51, 204, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/reset-password.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/password.png"))); // NOI18N
         jLabel7.setText("Đổi mật khẩu");
 
         javax.swing.GroupLayout pnlDoiMatKhauLayout = new javax.swing.GroupLayout(pnlDoiMatKhau);
@@ -426,7 +427,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
         jLabel9.setBackground(new java.awt.Color(51, 204, 255));
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/power-off.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/emergency-exit.png"))); // NOI18N
         jLabel9.setText("Đăng xuất");
 
         javax.swing.GroupLayout pnlDangXuatLayout = new javax.swing.GroupLayout(pnlDangXuat);
