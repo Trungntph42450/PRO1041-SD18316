@@ -77,7 +77,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 204, 255));
 
-        pnlTitle.setBackground(new java.awt.Color(51, 204, 255));
+        pnlTitle.setBackground(new java.awt.Color(102, 255, 102));
         pnlTitle.setPreferredSize(new java.awt.Dimension(1000, 100));
 
         btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/close.png"))); // NOI18N
@@ -113,9 +113,9 @@ public class KrantsStoreView extends javax.swing.JFrame {
                     .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        pnlMenu.setBackground(new java.awt.Color(51, 204, 255));
+        pnlMenu.setBackground(new java.awt.Color(102, 255, 102));
 
-        pnlSanPham.setBackground(new java.awt.Color(51, 204, 255));
+        pnlSanPham.setBackground(new java.awt.Color(102, 255, 102));
         pnlSanPham.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlSanPhamMouseClicked(evt);
@@ -130,7 +130,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel2.setBackground(new java.awt.Color(51, 204, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/brand-identity.png"))); // NOI18N
         jLabel2.setText("Sản phẩm");
 
@@ -151,7 +150,8 @@ public class KrantsStoreView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlNhanVien.setBackground(new java.awt.Color(51, 204, 255));
+        pnlNhanVien.setBackground(new java.awt.Color(102, 255, 102));
+        pnlNhanVien.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlNhanVien.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlNhanVienMouseClicked(evt);
@@ -166,7 +166,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel3.setBackground(new java.awt.Color(51, 204, 255));
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/team.png"))); // NOI18N
         jLabel3.setText("Nhân viên");
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -188,7 +187,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlThongKe.setBackground(new java.awt.Color(51, 204, 255));
+        pnlThongKe.setBackground(new java.awt.Color(102, 255, 102));
         pnlThongKe.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlThongKeMouseClicked(evt);
@@ -203,7 +202,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel12.setBackground(new java.awt.Color(51, 204, 255));
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/contract.png"))); // NOI18N
         jLabel12.setText("Thống kê");
 
@@ -224,7 +222,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlHoaDon.setBackground(new java.awt.Color(51, 204, 255));
+        pnlHoaDon.setBackground(new java.awt.Color(102, 255, 102));
         pnlHoaDon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlHoaDonMouseClicked(evt);
@@ -239,7 +237,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel4.setBackground(new java.awt.Color(51, 204, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/sticky-notes.png"))); // NOI18N
         jLabel4.setText("Hóa đơn");
 
@@ -260,7 +257,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlLichSu.setBackground(new java.awt.Color(51, 204, 255));
+        pnlLichSu.setBackground(new java.awt.Color(102, 255, 102));
         pnlLichSu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlLichSuMouseClicked(evt);
@@ -275,7 +272,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel5.setBackground(new java.awt.Color(51, 204, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/history.png"))); // NOI18N
         jLabel5.setText("Lịch sử");
 
@@ -296,7 +292,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlKhuyenMai.setBackground(new java.awt.Color(51, 204, 255));
+        pnlKhuyenMai.setBackground(new java.awt.Color(102, 255, 102));
         pnlKhuyenMai.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlKhuyenMaiMouseClicked(evt);
@@ -311,7 +307,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel6.setBackground(new java.awt.Color(51, 204, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/promotion.png"))); // NOI18N
         jLabel6.setText("Khuyến mại");
 
@@ -332,7 +327,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlKhachHang.setBackground(new java.awt.Color(51, 204, 255));
+        pnlKhachHang.setBackground(new java.awt.Color(102, 255, 102));
         pnlKhachHang.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlKhachHangMouseClicked(evt);
@@ -347,7 +342,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel8.setBackground(new java.awt.Color(51, 204, 255));
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/customer-service.png"))); // NOI18N
         jLabel8.setText("Khách hàng");
 
@@ -371,7 +365,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
                     .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)))
         );
 
-        pnlDoiMatKhau.setBackground(new java.awt.Color(51, 204, 255));
+        pnlDoiMatKhau.setBackground(new java.awt.Color(102, 255, 102));
         pnlDoiMatKhau.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlDoiMatKhauMouseClicked(evt);
@@ -386,7 +380,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel7.setBackground(new java.awt.Color(51, 204, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/password.png"))); // NOI18N
         jLabel7.setText("Đổi mật khẩu");
 
@@ -411,7 +404,7 @@ public class KrantsStoreView extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        pnlDangXuat.setBackground(new java.awt.Color(51, 204, 255));
+        pnlDangXuat.setBackground(new java.awt.Color(102, 255, 102));
         pnlDangXuat.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlDangXuatMouseClicked(evt);
@@ -426,7 +419,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel9.setBackground(new java.awt.Color(51, 204, 255));
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/emergency-exit.png"))); // NOI18N
         jLabel9.setText("Đăng xuất");
 
