@@ -3,12 +3,53 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_SanPham.java</file>
-            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/KrantsStoreView.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/TaiKhoan.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/KhuyenMaiRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/SanPhamRepository.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/DangNhapView.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/application/main.java</file>
-            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_NhanVien.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/KhachHangRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/KrantsStore.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_KhuyenMai.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/util/DBConnect.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_KhachHang.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/MauSacRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/TestImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_HoaDon.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/Events.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/NhanVien.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_ThongKe.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/icon/Thêm%20tiêu%20đề%20phụ.png</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/KhachHangServiceImp.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/LoginRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/LoaiSanPhamServiceImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_LichSu.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/DoiTra.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/LoaiSanPham.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/KhuyenMaiServiceImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/SanPham.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/DoiMKRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/ChiTietSanPhamServiceImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/HoaDon.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/KrantsStoreView.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/SanPhamServiceImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/ChatLieuServiceImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/KichThuocServiceImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/MauSac.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/NhanVienServiceImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/ChiTietSanPham.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/KichThuoc.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/MauSacServiceImp.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/ChatLieuRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/ChatLieu.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/LoaiSanPhamRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/ChiTietSanPhamRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/NhanVienRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_DoiMatKhau.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/KichThuocRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_NhanVien.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/HinhThucThanhToan.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/KhachHang.java</file>
         </group>
     </open-files>
 </project-private>
