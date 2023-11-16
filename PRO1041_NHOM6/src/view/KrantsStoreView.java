@@ -202,7 +202,6 @@ public class KrantsStoreView extends javax.swing.JFrame {
 
         jLabel12.setBackground(new java.awt.Color(51, 204, 255));
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/document.png"))); // NOI18N
         jLabel12.setText("Thống kê");
 
