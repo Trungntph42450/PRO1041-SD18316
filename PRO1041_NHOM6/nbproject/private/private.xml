@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/TaiKhoan.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/KhuyenMaiRepository.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/SanPhamRepository.java</file>
@@ -50,6 +51,11 @@
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_NhanVien.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/HinhThucThanhToan.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/KhachHang.java</file>
+=======
+            <file>file:/D:/Du_An_1/PRO1041-SD18316/PRO1041_NHOM6/src/view/KrantsStoreView.java</file>
+            <file>file:/D:/Du_An_1/PRO1041-SD18316/PRO1041_NHOM6/src/util/DBConnect.java</file>
+            <file>file:/D:/Du_An_1/PRO1041-SD18316/PRO1041_NHOM6/src/view/test.java</file>
+>>>>>>> cd7a82988389ecb5c2f32d32c7b737c90097fac3
         </group>
     </open-files>
 </project-private>
