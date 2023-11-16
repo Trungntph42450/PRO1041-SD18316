@@ -203,37 +203,25 @@ public class itf_DoiMatKhau extends javax.swing.JInternalFrame {
 
     private void btnCapNhatMKMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCapNhatMKMouseClicked
         // TODO add your handling code here:
-//        checkEmpty();
-//        String maTK = txtMaTK.getText();
-//        String matKhauHT = new String(txtMatKhauHT.getPassword());
-//        String matKhauMoi = new String(txtMatKhauM.getPassword());
-//        String nhapLaiMKM = new String(txtNhapLaiMKM.getPassword());
-//        if (rootPaneCheckingEnabled) {
-//            
-//        }
         if (!checkEmpty()) {
-            return; // If fields are empty, exit the method
+            return; 
         }
 
-        // Get values from input fields
+
         String maTK = txtMaTK.getText();
         String matKhauHT = new String(txtMatKhauHT.getPassword());
         String matKhauMoi = new String(txtMatKhauM.getPassword());
         String nhapLaiMKM = new String(txtNhapLaiMKM.getPassword());
 
-        // Check if the new passwords match
         if (!matKhauMoi.equals(nhapLaiMKM)) {
             JOptionPane.showMessageDialog(this, "Mật khẩu mới và nhập lại mật khẩu mới không khớp!");
             return;
         }
 
-        // Call the updatePass method in DoiMKRepository
         int rowsAffected = dms.updatePass(maTK, nhapLaiMKM);
 
-        // Check the result of the password update
         if (rowsAffected > 0) {
             JOptionPane.showMessageDialog(this, "Cập nhật mật khẩu thành công!");
-            // Optionally, you can close the internal frame or perform any other actions.
         } else {
             JOptionPane.showMessageDialog(this, "Cập nhật mật khẩu thất bại. Vui lòng thử lại!");
         }

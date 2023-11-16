@@ -44,7 +44,6 @@ public class DoiMKRepository {
             e.printStackTrace();
             return 0;
         } finally {
-            // Close resources (PreparedStatement and Connection)
             try {
                 if (pst != null) {
                     pst.close();
