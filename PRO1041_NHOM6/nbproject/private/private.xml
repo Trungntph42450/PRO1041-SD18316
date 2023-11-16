@@ -35,7 +35,6 @@
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/SanPhamServiceImp.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/ChatLieuServiceImp.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/KichThuocServiceImp.java</file>
-            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/util/DBConnect1.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/MauSac.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/service/servicImp/NhanVienServiceImp.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/ChiTietSanPham.java</file>
@@ -48,6 +47,7 @@
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/NhanVienRepository.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_DoiMatKhau.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/repository/KichThuocRepository.java</file>
+            <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_SanPham.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/view/itf_NhanVien.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/HinhThucThanhToan.java</file>
             <file>file:/C:/Users/Nguyen%20Thanh%20Trung/Pictures/PRO1041-SD18316/PRO1041_NHOM6/src/model/KhachHang.java</file>
