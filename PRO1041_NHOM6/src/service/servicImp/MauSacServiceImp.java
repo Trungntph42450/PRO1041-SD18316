@@ -3,18 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package service.servicImp;
-
 import java.util.List;
 import model.MauSac;
 import repository.MauSacRepository;
 import service.KrantsStore;
-
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
-public class MauSacServiceImp implements KrantsStore<MauSac, String> {
-
+public class MauSacServiceImp implements KrantsStore<MauSac, String>{
     MauSacRepository repo = new MauSacRepository();
 
     @Override
@@ -46,12 +43,13 @@ public class MauSacServiceImp implements KrantsStore<MauSac, String> {
     public List<MauSac> getList(String e) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
-    public List<MauSac> listPageMS(int index) {
+    
+    public List<MauSac> listPageMS(int index){
         return repo.listPageMS(index);
     }
-
-    public int tongBanGhi() {
+    
+    public int tongBanGhi(){
         return repo.tongBanGhi();
     }
+    
 }

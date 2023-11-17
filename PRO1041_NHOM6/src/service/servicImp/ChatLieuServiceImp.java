@@ -3,18 +3,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package service.servicImp;
-
 import java.util.List;
 import model.ChatLieu;
-import repository.ChatLieuRepository;
 import service.KrantsStore;
+import repository.ChatLieuRepository;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
 public class ChatLieuServiceImp implements KrantsStore<ChatLieu, String>{
-    ChatLieuRepository repo=new ChatLieuRepository();
+    ChatLieuRepository repo = new ChatLieuRepository();
 
     @Override
     public List<ChatLieu> getAll() {
@@ -45,10 +44,13 @@ public class ChatLieuServiceImp implements KrantsStore<ChatLieu, String>{
     public List<ChatLieu> getList(String e) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-        public List<ChatLieu> listPageCL(int index){
+    public List<ChatLieu> listPageCL(int index){
         return repo.listPageCL(index);
     }
+    
     public int tongBanGhi(){
         return repo.tongBanGhi();
     }
+    
+    
 }

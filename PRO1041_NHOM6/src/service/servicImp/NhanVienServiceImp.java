@@ -3,16 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package service.servicImp;
-
 import java.util.List;
 import model.NhanVien;
-
 import repository.NhanVienRepository;
 import service.KrantsStore;
-
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
 public class NhanVienServiceImp implements KrantsStore<NhanVien, String>{
     NhanVienRepository repo = new NhanVienRepository();
@@ -47,10 +44,13 @@ public class NhanVienServiceImp implements KrantsStore<NhanVien, String>{
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
-    public List<NhanVien> getList2(String e, String f){
-        return repo.getList2(e, f);
+    public List<NhanVien> getList2(String mot ,String hai){
+        return repo.getList2(mot, hai);
     }
-    public List<NhanVien> getList3(String e, String f){
-        return repo.getList3(e, f);
+    
+    public List<NhanVien> getList3(String mot, String hai){
+        return repo.getList3(mot, hai);
     }
+    
+    
 }

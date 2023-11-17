@@ -5,16 +5,15 @@
 package service.servicImp;
 
 import java.util.List;
+import service.KrantsStore;
 import model.KichThuoc;
 import repository.KichThuocRepository;
-import service.KrantsStore;
-
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
 public class KichThuocServiceImp implements KrantsStore<KichThuoc, String>{
-    KichThuocRepository repo=new KichThuocRepository();
+    KichThuocRepository repo = new KichThuocRepository();
 
     @Override
     public List<KichThuoc> getAll() {
@@ -46,11 +45,11 @@ public class KichThuocServiceImp implements KrantsStore<KichThuoc, String>{
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
-     public List<KichThuoc> listPageKT(int index) {
+    public List<KichThuoc> listPageKT(int index){
         return repo.listPageKT(index);
     }
-
-    public int tongBanGhi() {
+    public int tongBanGhi(){
         return repo.tongBanGhi();
     }
+    
 }
