@@ -28,9 +28,9 @@ import service.servicImp.KhachHangServiceImp;
  * @author Admin
  */
 public class itf_KhachHang extends javax.swing.JInternalFrame {
-
+    
     KhachHangServiceImp serviceKH = new KhachHangServiceImp();
-    DefaultTableModel tblmol = new DefaultTableModel();
+    DefaultTableModel tblmoi = new DefaultTableModel();
     DefaultComboBoxModel<KhachHang> cbxKhachHang = new DefaultComboBoxModel<>();
     int index = -1;
     int tongBanGhiKH, trangKH = 1, soTrangKH;
@@ -41,27 +41,27 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
     public itf_KhachHang() {
         initComponents();
         this.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        BasicInternalFrameUI uI = (BasicInternalFrameUI) this.getUI();
-        uI.setNorthPane(null);
+        BasicInternalFrameUI ul = (BasicInternalFrameUI) this.getUI();
+        ul.setNorthPane(null);
         this.setSize(1300, 755);
         loadPageKH();
-        sort();
         loadCboDiaChi(serviceKH.getAll());
-        cboGioiTinh.setSelectedIndex(-1);
+        sort();
     }
-
+    
     public void fillTableKH(List<KhachHang> list) {
-        tblmol = (DefaultTableModel) tblKhachHang.getModel();
-        tblmol.setRowCount(0);
+        tblmoi = (DefaultTableModel) tblKhachHang.getModel();
+        tblmoi.setRowCount(0);
         for (KhachHang item : list) {
-            tblmol.addRow(new Object[]{
+            tblmoi.addRow(new Object[]{
                 item.getMaKhachHang(), item.getHoTen(), item.chiTietGioiTinh(),
                 item.getSoDienThoai(), item.getNgaySinh(),
                 item.getEmail(), item.getDiaChi()
             });
         }
+        
     }
-
+    
     public void loadCboDiaChi(List<KhachHang> list) {
         cbxKhachHang.removeAllElements();
         List<String> addedValues = new ArrayList<>();
@@ -74,7 +74,7 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
         cboDiaChi.setModel((ComboBoxModel) cbxKhachHang);
         cboDiaChi.setSelectedIndex(-1);
     }
-
+    
     public void loadPageKH() {
         tongBanGhiKH = serviceKH.tongBanGhi();
         if (tongBanGhiKH % 4 == 0) {
@@ -82,32 +82,31 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
         } else {
             soTrangKH = tongBanGhiKH / 4 + 1;
         }
-        lblSoTrangKH.setText(trangKH + " of " + soTrangKH);
+        lblSoTrangKH.setText(trangKH + "of" + soTrangKH);
         fillTableKH(serviceKH.listPageKH(trangKH));
     }
-
+    
     public void sort() {
         tblKhachHang.getTableHeader().addMouseListener(new MouseAdapter() {
-            int sortType = 0; //Biến để theo dõi kiểu sắp xếp: 0 là tăng dần, 1 là giảm dần
-
+            int sortType = 0;
+            
             @Override
             public void mouseClicked(MouseEvent e) {
                 int col = tblKhachHang.columnAtPoint(e.getPoint());
                 tblKhachHang.setAutoCreateRowSorter(true);
                 TableRowSorter<TableModel> sorter = new TableRowSorter<>(tblKhachHang.getModel());
                 tblKhachHang.setRowSorter(sorter);
-                // Kiểm tra kiểu sắp xếp hiện tại và cập nhật ngược lại
                 if (sortType == 0) {
                     sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(col, SortOrder.DESCENDING)));
-                    sortType = 1; // Cập nhật kiểu sắp xếp ngược lại
+                    sortType = 1;
                 } else {
                     sorter.setSortKeys(Arrays.asList(new RowSorter.SortKey(col, SortOrder.ASCENDING)));
-                    sortType = 0; // Cập nhật kiểu sắp xếp ngược lại
+                    sortType = 0;
                 }
             }
         });
     }
-
+    
     public void detailKH(int index) {
         txtMaKhachHang.setText(tblKhachHang.getValueAt(index, 0).toString());
         txtTenKhachHang.setText(tblKhachHang.getValueAt(index, 1).toString());
@@ -121,9 +120,9 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
             rdNu.setSelected(true);
         }
     }
-
+    
     public KhachHang getFormKH() {
-        Boolean gioiTinh;
+        boolean gioiTinh;
         String maKH = txtMaKhachHang.getText();
         String hoTen = txtTenKhachHang.getText();
         String sdt = txtSoDienThoai.getText();
@@ -142,8 +141,9 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
             gioiTinh = false;
         }
         return new KhachHang(maKH, hoTen, ngaySinh, sdt, email, gioiTinh, diaChi);
+        
     }
-
+    
     public boolean validateKH() {
         return true;
     }
@@ -554,6 +554,7 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
                 JOptionPane.showMessageDialog(this, "Thêm khách hàng thành công");
             } else {
                 JOptionPane.showMessageDialog(this, "Thêm khách hàng thất bại");
+                
             }
         }
 
@@ -572,6 +573,7 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
                 JOptionPane.showMessageDialog(this, "Sửa thông tin khách hàng thành công");
             } else {
                 JOptionPane.showMessageDialog(this, "Sửa thông tin khách hàng thất bại");
+                
             }
         }
     }//GEN-LAST:event_btnCapNhatMouseClicked
@@ -603,14 +605,14 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         trangKH = 1;
         fillTableKH(serviceKH.listPageKH(trangKH));
-        lblSoTrangKH.setText(trangKH + " of " + soTrangKH);
+        lblSoTrangKH.setText(trangKH + "of" + soTrangKH);
     }//GEN-LAST:event_btnDauMouseClicked
 
     private void btnCuoiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCuoiMouseClicked
         // TODO add your handling code here:
         trangKH = soTrangKH;
         fillTableKH(serviceKH.listPageKH(trangKH));
-        lblSoTrangKH.setText(trangKH + " of " + soTrangKH);
+        lblSoTrangKH.setText(trangKH + "of" + soTrangKH);
     }//GEN-LAST:event_btnCuoiMouseClicked
 
     private void btnTienMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTienMouseClicked
@@ -618,17 +620,13 @@ public class itf_KhachHang extends javax.swing.JInternalFrame {
         if (trangKH < soTrangKH) {
             trangKH++;
             fillTableKH(serviceKH.listPageKH(trangKH));
-            lblSoTrangKH.setText(trangKH + " of " + soTrangKH);
+            lblSoTrangKH.setText(trangKH + "of" + soTrangKH);
         }
     }//GEN-LAST:event_btnTienMouseClicked
 
     private void btnLuiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLuiMouseClicked
         // TODO add your handling code here:
-        if (trangKH > 1) {
-            trangKH--;
-            fillTableKH(serviceKH.listPageKH(trangKH));
-            lblSoTrangKH.setText(trangKH + " of " + soTrangKH);
-        }
+
     }//GEN-LAST:event_btnLuiMouseClicked
 
     private void cboGioiTinhItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboGioiTinhItemStateChanged
