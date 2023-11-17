@@ -5,16 +5,15 @@
 package service.servicImp;
 import java.util.List;
 import model.ChiTietSanPham;
-import repository.ChiTietSanPhamRepository;
-import view.KrantsStoreView;
 import service.KrantsStore;
+import repository.ChiTietSanPhamRepository;
 
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
 public class ChiTietSanPhamServiceImp implements KrantsStore<ChiTietSanPham, String>{
-    ChiTietSanPhamRepository repo=new ChiTietSanPhamRepository();
+    ChiTietSanPhamRepository repo = new ChiTietSanPhamRepository();
 
     @Override
     public List<ChiTietSanPham> getAll() {
@@ -46,17 +45,16 @@ public class ChiTietSanPhamServiceImp implements KrantsStore<ChiTietSanPham, Str
         return repo.getList(e);
     }
     
-    public List<ChiTietSanPham> getListGia(double giaMin,double giaMax) {
+    public List<ChiTietSanPham> getListGia(double giaMin,double giaMax){
         return repo.getListGia(giaMin, giaMax);
     }
     
-    public List<ChiTietSanPham> listPageCTSP(int index) {
+    public List<ChiTietSanPham> listPageCTSP(int index){
         return repo.listPageCTSP(index);
     }
-
-    public int tongBanGhi() {
+    
+    public int tongBanGhi(){
         return repo.tongBanGhi();
     }
-
     
 }

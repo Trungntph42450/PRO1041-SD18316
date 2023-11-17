@@ -3,18 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package service.servicImp;
-
 import java.util.List;
 import model.SanPham;
 import repository.SanPhamRepository;
 import service.KrantsStore;
-
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
-public class SanPhamServiceImp implements KrantsStore<SanPham, String> {
-
+public class SanPhamServiceImp implements KrantsStore<SanPham, String>{
     SanPhamRepository repo = new SanPhamRepository();
 
     @Override
@@ -46,12 +43,12 @@ public class SanPhamServiceImp implements KrantsStore<SanPham, String> {
     public List<SanPham> getList(String e) {
         return repo.getList(e);
     }
-
-    public List<SanPham> listPageSP(int index) {
+    
+    public List<SanPham> listPageSP(int index){
         return repo.listPageSP(index);
     }
-    
     public int tongBanGhi(){
         return repo.tongBanGhi();
     }
+    
 }

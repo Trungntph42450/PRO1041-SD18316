@@ -3,22 +3,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package service.servicImp;
-
 import java.util.List;
 import model.LoaiSanPham;
 import repository.LoaiSanPhamRepository;
 import service.KrantsStore;
-
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
 public class LoaiSanPhamServiceImp implements KrantsStore<LoaiSanPham, String>{
-    LoaiSanPhamRepository repo=new LoaiSanPhamRepository();
+    LoaiSanPhamRepository repo = new LoaiSanPhamRepository();
 
     @Override
     public List<LoaiSanPham> getAll() {
-     return repo.getAll();
+        return repo.getAll();
     }
 
     @Override
@@ -45,5 +43,6 @@ public class LoaiSanPhamServiceImp implements KrantsStore<LoaiSanPham, String>{
     public List<LoaiSanPham> getList(String e) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
     
 }
