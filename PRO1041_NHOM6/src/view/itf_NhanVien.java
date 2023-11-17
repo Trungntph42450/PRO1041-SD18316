@@ -114,7 +114,7 @@ public class itf_NhanVien extends javax.swing.JInternalFrame {
         };
         txtTimNV.getDocument().addDocumentListener(dl);
     }
-    
+
     public void setForm(Boolean x) {
         Component[] cpn = jPanel61.getComponents();
         for (Component cp : cpn) {
