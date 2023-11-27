@@ -568,7 +568,7 @@ public class itf_NhanVien extends javax.swing.JInternalFrame {
                 .addComponent(cboGioiTinh, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cboDiaChi, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
                 .addComponent(btnRSDiaChiNV)
                 .addContainerGap())
         );
@@ -795,6 +795,7 @@ public class itf_NhanVien extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_lblAnhNVMouseClicked
 
     private void tblNV1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblNV1MouseClicked
+       JOptionPane.showInputDialog(closable);
         index = tblNV1.getSelectedRow();
         detailNhanVien(tblNV1, index, true);
         setForm(true);

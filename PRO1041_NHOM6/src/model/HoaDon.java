@@ -12,29 +12,19 @@ import java.util.Date;
  */
 public class HoaDon {
     private String maHoaDon;
-    private NhanVien nhanVien;
-    private KhachHang khachHang;
-    private HinhThucThanhToan hinhThucThanhToan;
+    private String  ManhanVien;
+    private String MakhachHang;
+    private String hinhThucThanhToan;
     private Date ngayTao;
     private double tongTien;
-    private boolean trangThai;
+    private String trangThai;
     private String ghiChu;
-    private Events voucher;
+    private String voucher;
 
     public HoaDon() {
     }
 
-    public HoaDon(String maHoaDon, NhanVien nhanVien, KhachHang khachHang, HinhThucThanhToan hinhThucThanhToan, Date ngayTao, double tongTien, boolean trangThai, String ghiChu, Events voucher) {
-        this.maHoaDon = maHoaDon;
-        this.nhanVien = nhanVien;
-        this.khachHang = khachHang;
-        this.hinhThucThanhToan = hinhThucThanhToan;
-        this.ngayTao = ngayTao;
-        this.tongTien = tongTien;
-        this.trangThai = trangThai;
-        this.ghiChu = ghiChu;
-        this.voucher = voucher;
-    }
+ 
 
     public String getMaHoaDon() {
         return maHoaDon;
@@ -44,27 +34,27 @@ public class HoaDon {
         this.maHoaDon = maHoaDon;
     }
 
-    public NhanVien getNhanVien() {
-        return nhanVien;
+    public String getManhanVien() {
+        return ManhanVien;
     }
 
-    public void setNhanVien(NhanVien nhanVien) {
-        this.nhanVien = nhanVien;
+    public void setManhanVien(String ManhanVien) {
+        this.ManhanVien = ManhanVien;
     }
 
-    public KhachHang getKhachHang() {
-        return khachHang;
+    public String getMakhachHang() {
+        return MakhachHang;
     }
 
-    public void setKhachHang(KhachHang khachHang) {
-        this.khachHang = khachHang;
+    public void setMakhachHang(String MakhachHang) {
+        this.MakhachHang = MakhachHang;
     }
 
-    public HinhThucThanhToan getHinhThucThanhToan() {
+    public String getHinhThucThanhToan() {
         return hinhThucThanhToan;
     }
 
-    public void setHinhThucThanhToan(HinhThucThanhToan hinhThucThanhToan) {
+    public void setHinhThucThanhToan(String hinhThucThanhToan) {
         this.hinhThucThanhToan = hinhThucThanhToan;
     }
 
@@ -84,13 +74,7 @@ public class HoaDon {
         this.tongTien = tongTien;
     }
 
-    public boolean isTrangThai() {
-        return trangThai;
-    }
 
-    public void setTrangThai(boolean trangThai) {
-        this.trangThai = trangThai;
-    }
 
     public String getGhiChu() {
         return ghiChu;
@@ -100,12 +84,47 @@ public class HoaDon {
         this.ghiChu = ghiChu;
     }
 
-    public Events getVoucher() {
+    public String getVoucher() {
         return voucher;
     }
 
-    public void setVoucher(Events voucher) {
+    public void setVoucher(String voucher) {
         this.voucher = voucher;
     }
+
+//    public void setMaNV(NhanVien nhanVien) {
+//         
+//         NhanVien nv = new NhanVien();
+//         String nv =nv.getMaNhanVien();
+//}
+
+    public String getTrangThai() {
+        return trangThai;
+    }
+
+    public void setTrangThai(String trangThai) {
+        this.trangThai = trangThai;
+    }
+
+    public HoaDon(String maHoaDon, String ManhanVien, String MakhachHang, String hinhThucThanhToan, Date ngayTao, double tongTien, String trangThai, String ghiChu, String voucher) {
+        this.maHoaDon = maHoaDon;
+        this.ManhanVien = ManhanVien;
+        this.MakhachHang = MakhachHang;
+        this.hinhThucThanhToan = hinhThucThanhToan;
+        this.ngayTao = ngayTao;
+        this.tongTien = tongTien;
+        this.trangThai = trangThai;
+        this.ghiChu = ghiChu;
+        this.voucher = voucher;
+    }
+
+
+       public Object[] dataHD(){
+        return new Object[] {
+            
+            this.maHoaDon,this.ManhanVien,this.MakhachHang,this.hinhThucThanhToan,this.ngayTao,this.tongTien,this.trangThai,this.ghiChu,this.voucher
+        };
+    }
+
     
 }
