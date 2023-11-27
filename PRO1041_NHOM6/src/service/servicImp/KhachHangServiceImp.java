@@ -5,18 +5,16 @@
 package service.servicImp;
 
 import java.util.List;
+import service.KrantsStore;
 import model.KhachHang;
 import repository.KhachHangRepository;
-import service.KrantsStore;
-
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
 public class KhachHangServiceImp implements KrantsStore<KhachHang, String>{
-    
     KhachHangRepository repo = new KhachHangRepository();
-    
+
     @Override
     public List<KhachHang> getAll() {
         return repo.getAll();
@@ -50,8 +48,10 @@ public class KhachHangServiceImp implements KrantsStore<KhachHang, String>{
     public List<KhachHang> listPageKH(int index){
         return repo.listPageKH(index);
     }
-            
+    
     public int tongBanGhi(){
         return repo.tongBanGhi();
-    }     
+    }
+    
+    
 }

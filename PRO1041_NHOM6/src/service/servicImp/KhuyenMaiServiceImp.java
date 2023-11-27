@@ -5,16 +5,14 @@
 package service.servicImp;
 
 import java.util.List;
+import service.KrantsStore;
 import model.Events;
 import repository.KhuyenMaiRepository;
-import service.KrantsStore;
-
 /**
  *
- * @author Nguyen Thanh Trung
+ * @author ADMIN
  */
-public class KhuyenMaiServiceImp implements KrantsStore<Events, String> {
-
+public class KhuyenMaiServiceImp implements KrantsStore<Events, String>{
     KhuyenMaiRepository repo = new KhuyenMaiRepository();
 
     @Override
@@ -46,13 +44,13 @@ public class KhuyenMaiServiceImp implements KrantsStore<Events, String> {
     public List<Events> getList(String e) {
         return repo.getList(e);
     }
-
-    public List<Events> getList2(boolean tt) {
+    
+    public List<Events> getList2(boolean tt){
         return repo.searchTheoTrangThai(tt);
     }
-
-    public int suaTrangThai() {
+    public int suaTrangThai(){
         return repo.updateTrangThai();
     }
-
+    
+    
 }
